@@ -8,9 +8,7 @@ interface DataProps {
 class Header extends React.Component<DataProps> {
   render () {
 
-      const name = this.props.data.name;
-      const occupation= this.props.data.occupation;
-      const description= this.props.data.description;
+      const { description, name, occupation } = this.props.data;
       const workCity= this.props.data.address.workCity;
       const networks= this.props.data.social.map((network) =>
         <li key={network.name}><a href={network.url}><i className={network.className}/></a></li>

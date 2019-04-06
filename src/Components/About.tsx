@@ -8,16 +8,9 @@ interface DataProps {
 class About extends React.Component<DataProps> {
   render() {
 
-      const name = this.props.data.name;
+      const { bio, email, name, phone, resumeDownload } = this.props.data;
       const profilepic= "images/"+this.props.data.image;
-      const bio = this.props.data.bio;
-      const street = this.props.data.address.street;
-      const city = this.props.data.address.city;
-      const state = this.props.data.address.state;
-      const zip = this.props.data.address.zip;
-      const phone= this.props.data.phone;
-      const email = this.props.data.email;
-      const resumeDownload = this.props.data.resumeDownload;
+      const { city, state, street, zip } = this.props.data.address;
 
     return (
       <section id="about">
@@ -35,7 +28,7 @@ class About extends React.Component<DataProps> {
                   <p className="address">
 						   <span>{name}</span><br />
 						   <span>{street}<br />
-						         {city} {state}, {zip}
+						         {city}, {state} {zip}
                    </span><br />
 						   <span>{phone}</span><br />
                      <span>{email}</span>
@@ -43,7 +36,7 @@ class About extends React.Component<DataProps> {
                </div>
                <div className="columns download">
                   <p>
-                     <a href={resumeDownload} className="button" download="true"><i className="fa fa-download"/>Download Resume</a>
+                     <a href={resumeDownload} className="button" download="resume_Sujit_Pradhan"><i className="fa fa-download"/>Download Resume</a>
                   </p>
                </div>
             </div>

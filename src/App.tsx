@@ -63,7 +63,7 @@ class App extends React.Component<{}, AppState> {
   }
 
   getData = () => {
-    fetch('/resumeData.json')
+    fetch('resumeData.json')
   .then((response) => {
     return response.json();
   })

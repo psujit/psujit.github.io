@@ -12,13 +12,8 @@ class Contact extends React.Component<DataProps> {
   render() {
 
 
-    const name = this.props.data.name;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
-    // const email = this.props.data.email;
+    const { name, phone } = this.props.data;
+    const { city, state, street, zip } = this.props.data.address;
     const message = this.props.data.contactMessage;
 
     const size = 35
@@ -89,12 +84,12 @@ class Contact extends React.Component<DataProps> {
           <aside className="four columns footer-widgets">
             <div className="widget widget_contact">
 
-              <h4>Address and Phone</h4>
+              <h4>Address</h4>
               <p className="address">
-                {name}<br />
-                {street} <br />
-                {city}, {state} {zip}<br />
-                <span>{phone}</span>
+                {name}
+                <br />{street}
+                <br />{city}, {state} {zip}
+                {phone && <br /> && <span>{phone}</span>}
               </p>
             </div>
 
