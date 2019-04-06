@@ -10,9 +10,7 @@ class Contact extends React.Component<DataProps> {
     return;
   }
   render() {
-
-
-    const { name, phone } = this.props.data;
+    const { email, name, phone } = this.props.data;
     const { city, state, street, zip } = this.props.data.address;
     const message = this.props.data.contactMessage;
 
@@ -47,12 +45,12 @@ class Contact extends React.Component<DataProps> {
 
                 <div>
                   <label htmlFor="contactName">Name <span className="required">*</span></label>
-                  <input type="text" defaultValue="" size={size} id="contactName" name="contactName" onChange={this.handleChange} />
+                  <input type="text" defaultValue="" size={size} id="contactName" name="contactName" required={true} onChange={this.handleChange} />
                 </div>
 
                 <div>
                   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                  <input type="text" defaultValue="" size={size} id="contactEmail" name="contactEmail" onChange={this.handleChange} />
+                  <input type="text" defaultValue="" size={size} id="contactEmail" name="contactEmail" required={true} onChange={this.handleChange} />
                 </div>
 
                 <div>
@@ -62,11 +60,11 @@ class Contact extends React.Component<DataProps> {
 
                 <div>
                   <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                  <textarea cols={cols} rows={rows} id="contactMessage" name="contactMessage" />
+                  <textarea cols={cols} rows={rows} id="contactMessage" required={true} name="contactMessage" />
                 </div>
 
                 <div>
-                  <button className="submit">Submit</button>
+                  <a className="submit" href={"mailto:" + email + ""}>Submit</a>
                   <span id="image-loader">
                     <img alt="" src="images/loader.gif" />
                   </span>
@@ -87,9 +85,9 @@ class Contact extends React.Component<DataProps> {
               <h4>Address</h4>
               <p className="address">
                 {name}
-                <br />{street}
+                {street && <br /> && street}
                 <br />{city}, {state} {zip}
-                {phone && <br /> && <span>{phone}</span>}
+                {phone && <br /> && phone}
               </p>
             </div>
 
