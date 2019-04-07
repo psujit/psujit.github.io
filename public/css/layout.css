@@ -808,7 +808,7 @@ call-to-action .button {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
-   color: #EBEEEE;
+   color: #636363;
    margin-bottom: 6px;
 }
 #contact h1 span { display: none; }
@@ -820,7 +820,7 @@ call-to-action .button {
    line-height: 72px;
    text-align: left;
    float: left;
-   color: #ebeeee;
+   color: #636363;
 }
 
 #contact h4 {
@@ -884,6 +884,32 @@ call-to-action .button {
 	color: #11ABB0;
 	font-size: 13px;
 }
+#contact .row .eight .button {
+   background-color: #444444;
+   color: #FFFFFF;
+}
+#contact .row .eight .button:hover,
+#contact .row .eight .button:focus {
+   background-color: #11ABB0;
+}
+#contact .row .eight .isDisabled {
+   cursor: not-allowed;
+   opacity: 0.5;
+ }
+ #contact .row .eight .isDisabled > a {
+   color: currentColor;
+   pointer-events: none;
+   text-decoration: none;
+ }
+ #contact .row .eight .isActive {
+   cursor: pointer;
+   opacity: 1;
+ }
+ #contact .row .eight .isActive > a {
+   color: currentColor;
+   pointer-events: all;
+   text-decoration: none;
+ }
 #message-warning, #message-success {
    display: none;
 	background: #0F0F0F;
