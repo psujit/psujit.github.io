@@ -22,7 +22,7 @@ export const Footer: React.FunctionComponent<DataProps> = (props) => {
            </ul>
 
            <ul className="copyright">
-              <li>&copy; Copyright 2018 Sujit Pradhan</li>
+              <li>&copy; Copyright 2023 Sujit Pradhan</li>
               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
            </ul>
 

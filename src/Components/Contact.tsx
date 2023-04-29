@@ -47,7 +47,7 @@ export const Contact: React.FunctionComponent<DataProps> = (props) => {
       setClassForButton( 'button isActive')
     }
   }
-     const { email, name, phone } = props.data;
+    const { email, name, phone } = props.data;
     const { city, state, street, zip } = props.data.address;
     const message = props.data.contactMessage;
 
