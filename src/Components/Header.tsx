@@ -14,7 +14,7 @@ export const Header: React.FunctionComponent<DataProps>  = (props) => {
       )
 
     return (
-      <header id="home">
+      <header id="home" style={{ backgroundImage: "url(images/header-background.jpg)" }}>
 
       <nav id="nav-wrap">
 

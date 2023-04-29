@@ -101,7 +101,7 @@ export const Contact: React.FunctionComponent<DataProps> = (props) => {
                 <div>
                   <a className={classForButton} href={"mailto:" + email + "?subject=" + contactSubject + "&body=" + contactMessage+contactName}>Submit</a>
                   <span id="image-loader">
-                    <img alt="" src="../../public/images/loader.gif" />
+                    <img alt="" src="images/loader.gif" />
                   </span>
                 </div>
               </fieldset>
