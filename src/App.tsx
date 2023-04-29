@@ -1,13 +1,13 @@
 import * as React from 'react';
 import './App.css';
 import {About} from './Components/About';
-import Contact from './Components/Contact';
+import {Contact} from './Components/Contact';
 import {Footer} from './Components/Footer';
 import {Header} from './Components/Header';
 // import Portfolio from './Components/Portfolio';
 import {Resume} from './Components/Resume';
 // import Testimonials from './Components/Testimonials';
-import { Main, PortfolioType, ResumeProps, Testimonials as TestimonialProps } from './types';
+import {Main, PortfolioType, ResumeProps, Testimonials as TestimonialProps} from './types';
 
 interface AppState {
   resumeData: ResumeData;
