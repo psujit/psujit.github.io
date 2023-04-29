@@ -10,19 +10,14 @@
     "phone": "",
     "address":{
       "street":"",
-      "city":"Stutensee",
-      "state":"Baden-Württemberg",
-      "zip": "76297",
+      "city":"Frankfurt am Main",
+      "state":"Hesse",
+      "zip": "60528",
       "workCity": "Karlsruhe"
     },
     "website": "http://psujit.github.io/react-resume",
     "resumeDownload":"docs/resume_Sujit_Pradhan.pdf",
     "social":[
-      {
-        "name":"facebook",
-        "url":"http://facebook.com/sleepingdevil5",
-        "className":"fa fa-facebook"
-      },
       {
         "name":"twitter",
         "url":"http://twitter.com/prezsujit",
@@ -30,7 +25,7 @@
       },
       {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/sujit-pradhan-94206155/",
+        "url":"https://www.linkedin.com/in/sujit-pradhan",
         "className":"fa fa-linkedin"
       },
       {
