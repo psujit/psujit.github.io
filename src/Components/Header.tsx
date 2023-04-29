@@ -5,12 +5,11 @@ interface DataProps {
   data: Main;
 }
 
-class Header extends React.Component<DataProps> {
-  render () {
+export const Header: React.FunctionComponent<DataProps>  = (props) => {
 
-      const { description, name, occupation } = this.props.data;
-      const workCity= this.props.data.address.workCity;
-      const networks= this.props.data.social.map((network) =>
+      const { description, name, occupation } = props.data;
+      const workCity= props.data.address.workCity;
+      const networks= props.data.social.map((network) =>
         <li key={network.name}><a href={network.url}><i className={network.className}/></a></li>
       )
 
@@ -50,7 +49,4 @@ class Header extends React.Component<DataProps> {
 
    </header>
     );
-  }
 }
-
-export default Header;

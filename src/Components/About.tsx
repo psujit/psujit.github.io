@@ -5,12 +5,11 @@ interface DataProps {
   data: Main;
 }
 
-class About extends React.Component<DataProps> {
-  render() {
+export const About: React.FunctionComponent<DataProps> = (props) => {
 
-      const { bio, email, name, phone, resumeDownload } = this.props.data;
-      const profilepic= "images/"+this.props.data.image;
-      const { city, state, street, zip } = this.props.data.address;
+      const { bio, email, name, phone, resumeDownload } = props.data;
+      const profilepic= "images/"+props.data.image;
+      const { city, state, street, zip } = props.data.address;
 
     return (
       <section id="about">
@@ -44,7 +43,4 @@ class About extends React.Component<DataProps> {
 
    </section>
     );
-  }
 }
-
-export default About;

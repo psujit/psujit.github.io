@@ -5,10 +5,9 @@ interface DataProps {
   data: Main;
 }
 
-class Footer extends React.Component<DataProps> {
-  render () {
+export const Footer: React.FunctionComponent<DataProps> = (props) => {
 
-      const networks= this.props.data.social.map((network) => 
+      const networks= props.data.social.map((network) =>
         <li key={network.name}><a href={network.url}><i className={network.className}/></a></li>
       )
     
@@ -32,7 +31,5 @@ class Footer extends React.Component<DataProps> {
      </div>
   </footer>
     );
-  }
 }
 
-export default Footer;
