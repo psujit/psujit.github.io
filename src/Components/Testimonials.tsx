@@ -1,41 +1,42 @@
-import * as React from 'react'
-import { Testimonials as TestimonialProps } from '../types'
+import * as React from 'react';
+import { Testimonials as TestimonialProps } from '../types';
 
 interface DataProps {
-  data: TestimonialProps
+  data: TestimonialProps;
 }
 
 class Testimonials extends React.Component<DataProps> {
   render() {
-    const testimonials = this.props.data.testimonials.map((testimonials) => {
-      return (
-        <li key={testimonials.user}>
-          <blockquote>
-            <p>{testimonials.text}</p>
-            <cite>{testimonials.user}</cite>
-          </blockquote>
-        </li>
-      )
-    })
+
+      const testimonials = this.props.data.testimonials.map((testimonials) => {
+        return  <li key={testimonials.user}>
+            <blockquote>
+               <p>{testimonials.text}</p>
+               <cite>{testimonials.user}</cite>
+            </blockquote>
+         </li>
+      })
+    
 
     return (
       <section id="testimonials">
-        <div className="text-container">
-          <div className="row">
+      <div className="text-container">
+         <div className="row">
+
             <div className="two columns header-col">
-              <h1>
-                <span>Client Testimonials</span>
-              </h1>
+               <h1><span>Client Testimonials</span></h1>
             </div>
 
             <div className="ten columns flex-container">
-              <ul className="slides">{testimonials}</ul>
+                  <ul className="slides">
+                      {testimonials}
+                  </ul>
+               </div>
             </div>
-          </div>
-        </div>
-      </section>
-    )
+         </div>
+   </section>
+    );
   }
 }
 
-export default Testimonials
+export default Testimonials;
