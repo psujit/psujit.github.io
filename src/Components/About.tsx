@@ -6,7 +6,7 @@ interface DataProps {
 }
 
 export const About: React.FunctionComponent<DataProps> = (props) => {
-  const { email, name, phone, resumeDownload } = props.data
+  const { downloadResume, email, name, phone, resumeDownload } = props.data
   const profilepic = 'images/' + props.data.image
   const { city, state, street, zip } = props.data.address
 
@@ -36,7 +36,7 @@ export const About: React.FunctionComponent<DataProps> = (props) => {
               <p>
                 <a href={resumeDownload} className="button" download="resume_Sujit_Pradhan">
                   <i className="fa fa-download" />
-                  Download Resume
+                  {downloadResume}
                 </a>
               </p>
             </div>

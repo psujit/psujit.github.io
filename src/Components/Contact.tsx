@@ -21,9 +21,8 @@ export const Contact: React.FunctionComponent<DataProps> = (props) => {
       });
   };
 
-  const { email, name } = props.data
+  const { contactEmailField, contactMessage, contactMessageField, contactNameField, contactSubmitField, email, name } = props.data
   const { city, state, zip } = props.data.address
-  const message = props.data.contactMessage
 
   const size = 35
   const cols = 50
@@ -39,7 +38,7 @@ export const Contact: React.FunctionComponent<DataProps> = (props) => {
         </div>
 
         <div className="ten columns">
-          <p className="lead">{message}</p>
+          <p className="lead">{contactMessage}</p>
         </div>
       </div>
 
@@ -48,7 +47,7 @@ export const Contact: React.FunctionComponent<DataProps> = (props) => {
           <form ref={form} onSubmit={sendEmail}>
             <div>
               <label htmlFor="from_name">
-                Name <span className="required">*</span>
+                {contactNameField} <span className="required">*</span>
               </label>
               <input
                 type="text"
@@ -62,7 +61,7 @@ export const Contact: React.FunctionComponent<DataProps> = (props) => {
 
             <div>
               <label htmlFor="from_email">
-                Email <span className="required">*</span>
+                {contactEmailField} <span className="required">*</span>
               </label>
               <input
                 type="text"
@@ -76,7 +75,7 @@ export const Contact: React.FunctionComponent<DataProps> = (props) => {
 
             <div>
               <label htmlFor="message">
-                Message <span className="required">*</span>
+                {contactMessageField} <span className="required">*</span>
               </label>
               <textarea
                 cols={cols}
@@ -88,7 +87,7 @@ export const Contact: React.FunctionComponent<DataProps> = (props) => {
             </div>
 
             <div className="submit">
-              <input type="submit" value="Send" />
+              <input type="submit" value={contactSubmitField} />
             </div>
           </form>
 

@@ -7,7 +7,18 @@ interface DataProps {
 }
 
 export const Header: React.FunctionComponent<DataProps> = (props) => {
-  const { description, introductionText, name, occupation, occupationText } = props.data
+  const {
+    description,
+    headerAbout,
+    headerContact,
+    headerHome,
+    headerResume,
+    headerWorks,
+    introductionText,
+    name,
+    occupation,
+    occupationText,
+  } = props.data
   const networks = props.data.social.map((network) => (
     <li key={network.name}>
       <a href={network.url}>
@@ -29,24 +40,28 @@ export const Header: React.FunctionComponent<DataProps> = (props) => {
         <ul id="nav" className="nav">
           <li className="current">
             <a className="smoothscroll" href="#home">
-              Home
+              {headerHome}
             </a>
           </li>
           <li>
             <a className="smoothscroll" href="#about">
-              About
+              {headerAbout}
             </a>
           </li>
           <li>
             <a className="smoothscroll" href="#resume">
-              Resume
+              {headerResume}
             </a>
           </li>
-          <li><a className="smoothscroll" href="#portfolio">Works</a></li>
+          <li>
+            <a className="smoothscroll" href="#portfolio">
+              {headerWorks}
+            </a>
+          </li>
           {/*<li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>*/}
           <li>
             <a className="smoothscroll" href="#contact">
-              Contact
+              {headerContact}
             </a>
           </li>
           <li>
@@ -60,7 +75,9 @@ export const Header: React.FunctionComponent<DataProps> = (props) => {
 
       <div className="row banner">
         <div className="banner-text">
-          <h1 className="responsive-headline">{introductionText} {name}.</h1>
+          <h1 className="responsive-headline">
+            {introductionText} {name}.
+          </h1>
           <h3>
             {occupationText} <span>{occupation}</span>. {description}.
           </h3>

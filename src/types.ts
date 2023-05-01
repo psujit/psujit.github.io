@@ -16,8 +16,18 @@ export interface Main {
     address: Address;
     bio: string;
     contactMessage: string;
+    contactNameField: string;
+    contactEmailField: string;
+    contactMessageField: string;
+    contactSubmitField: string;
+    downloadResume:  string;
     description: string;
     email: string;
+    headerHome: string;
+    headerAbout: string;
+    headerResume: string;
+    headerWorks: string;
+    headerContact: string;
     image: string;
     introductionText: string;
     name: string;
@@ -37,12 +47,12 @@ export interface Project {
 }
 
 export interface PortfolioType {
+    header: string;
     projects: Project[];
 }
 
 
 export interface ResumeProps {
-    skillMessage: string;
     education: Education[];
     work: Work[];
     skills: Skills[];

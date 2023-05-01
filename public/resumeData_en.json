@@ -6,9 +6,18 @@
     "occupationText": "I'm a Frankfurt based",
     "description": "With more than 7 years of experience in Web Technologies, I have a passion of creating state of the art and performant websites that work across platforms, devices & browsers. In my free time I love to travel around the globe and click pictures of nature.",
     "image": "profilepic.png",
-    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
     "contactMessage": "Have a Question? You can use the contact form below to contact me or use my email address directly.",
+    "contactNameField": "Name",
+    "contactEmailField": "Email",
+    "contactMessageField": "Message",
+    "contactSubmitField": "Send",
+    "downloadResume": "Download Resume",
     "email": "psujit14@gmail.com",
+    "headerHome": "Home",
+    "headerAbout": "About",
+    "headerResume": "Resume",
+    "headerWorks": "Works",
+    "headerContact": "Contact",
     "phone": "",
     "address": {
       "street": "",
@@ -47,7 +56,6 @@
     ]
   },
   "resume": {
-    "skillMessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
         "school": "Universität Passau",
@@ -126,6 +134,7 @@
     ]
   },
   "portfolio": {
+    "header": "Check out some of my works",
     "projects": [
       {
         "title": "GoTo Connect (previously GoToMeeting)",

@@ -4,11 +4,20 @@
     "introductionText": "Ich heiße",
     "occupation": "Senior Front End Software Engineer",
     "occupationText": "Ich bin ein in Frankfurt ansässiger",
-    "description": "With more than 7 years of experience in Web Technologies, I have a passion of creating state of the art and performant websites that work across platforms, devices & browsers. In my free time I love to travel around the globe and click pictures of nature.",
+    "description": "Mit mehr als 7 Jahren Erfahrung im Bereich der Webtechnologien habe ich eine Leidenschaft für die Erstellung von hochmodernen und leistungsstarken Websites, die plattform-, geräte- und browserübergreifend funktionieren. In meiner Freizeit liebe ich es, um die Welt zu reisen und Bilder von der Natur zu machen.",
     "image": "profilepic.png",
-    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
     "contactMessage": "Haben Sie eine Frage? Sie können das unten stehende Kontaktformular verwenden oder direkt meine E-Mail-Adresse benutzen.",
+    "contactNameField": "Name",
+    "contactEmailField": "Email",
+    "contactMessageField": "Nachricht",
+    "contactSubmitField": "Abschicken",
+    "downloadResume": "Lebenslauf herunterlanden",
     "email": "psujit14@gmail.com",
+    "headerHome": "Home",
+    "headerAbout": "Über mich",
+    "headerResume": "Lebenslauf",
+    "headerWorks": "Portfolio",
+    "headerContact": "Kontakt",
     "phone": "",
     "address": {
       "street": "",
@@ -47,7 +56,6 @@
     ]
   },
   "resume": {
-    "skillMessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
         "school": "Universität Passau",
@@ -126,6 +134,7 @@
     ]
   },
   "portfolio": {
+    "header": "Sehen Sie sich an, was ich entwickelt habe",
     "projects": [
       {
         "title": "GoTo Connect (ehemals GoToMeeting)",

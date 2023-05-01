@@ -6,7 +6,6 @@ interface DataProps {
 }
 
 export const Resume: React.FunctionComponent<DataProps> = (props) => {
-  const skillmessage = props.data.skillMessage
   const education = props.data.education.map((education) => {
     return (
       <div key={education.school}>
@@ -75,8 +74,6 @@ export const Resume: React.FunctionComponent<DataProps> = (props) => {
         </div>
 
         <div className="nine columns main-col">
-          <p>{skillmessage}</p>
-
           <div className="bars">
             <ul className="skills">{skills}</ul>
           </div>
