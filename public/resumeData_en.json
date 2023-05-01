@@ -137,20 +137,20 @@
     "header": "Check out some of my works",
     "projects": [
       {
-        "title": "GoTo Connect (previously GoToMeeting)",
-        "category": "Collaboration Tool - Online Meetings",
+        "title": "GoToMeeting",
+        "category": "Collaboration Tool - Online Meetings with Audio, Video and Screen sharing",
         "image": "GoToMeetingApp.png",
         "url": "https://app.gotomeeting.com/index.html"
       },
       {
-        "title": "GoTo Connect (previously GoToMeeting Messenger)",
-        "category": "Collaboration Tool - Online Messenger",
+        "title": "GoToMeeting Messenger",
+        "category": "Collaboration Tool - Full featured chat messenger for colleagues",
         "image": "GoToMeetingMessenger.png",
         "url": "https://app.goto.com/messaging"
       },
       {
         "title": "GoTo Resolve",
-        "category": "Remote Support Tool",
+        "category": "Remote Support Tool with Mobile Device Management functionality",
         "image": "GoToResolve.png",
         "url": "https://console.gotoresolve.com"
       },

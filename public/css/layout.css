@@ -487,6 +487,10 @@ ul#nav img {
 }
 
 /* Portfolio Content */
+#portfolio-wrapper {
+  display: flex;
+}
+
 #portfolio-wrapper .columns {
   margin-bottom: 36px;
 }

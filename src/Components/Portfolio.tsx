@@ -13,6 +13,7 @@ export const Portfolio: React.FunctionComponent<DataProps> = (props) => {
           <div className="item-wrap">
             <a href={projects.url} title={projects.title}>
               <img alt={projects.title} src={projectImage} />
+              <div>{projects.title}</div>
               <div className="overlay">
                 <div className="portfolio-item-meta">
                   <h5>{projects.title}</h5>
