@@ -65,7 +65,7 @@
     "work": [
       {
         "company": "GoTo Technologies Germany GmbH (previously LogMeIn GmbH)",
-        "title": "Software Development Engineer --> Senior Software Development Engineer",
+        "title": "Software Development Engineer ➡️ Senior Software Development Engineer",
         "years": "February 2018 - Present",
         "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
       },
@@ -89,7 +89,7 @@
       },
       {
         "company": "Infosys Ltd",
-        "title": "Systems Engineer --> Senior Systems Engineer",
+        "title": "Systems Engineer ➡️ Senior Systems Engineer",
         "years": "May 2013 - September 2015",
         "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
       }
@@ -128,34 +128,28 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "canadian-wanderlust.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "title": "GoTo Connect (previously GoToMeeting)",
+        "category": "Collaboration Tool - Online Meetings",
+        "image": "GoToMeetingApp.png",
+        "url": "https://app.gotomeeting.com/index.html"
       },
       {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "fury-fighting-gear.jpg",
-        "url": "http://www.timbakerdev.com"
+        "title": "GoTo Connect (previously GoToMeeting Messenger)",
+        "category": "Collaboration Tool - Online Messenger",
+        "image": "GoToMeetingMessenger.png",
+        "url": "https://app.goto.com/messaging"
       },
       {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "original-thai-food.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "The Sushi Wedding",
+        "category": "Website I built as a wedding invite for our wedding",
+        "image": "WeddingLogo.png",
+        "url": "https://the-sushi-wedding.netlify.app/"
       },
       {
         "title": "Resume Website",
-        "category": "A React based resume website template",
-        "image": "resume-website.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "smirkspace.jpg",
-        "url": "http://www.smirkspace.com"
+        "category": "A Typescript React based resume website template",
+        "image": "ResumeLogo.jpeg",
+        "url": "http://psujit.github.io"
       }
     ]
   },

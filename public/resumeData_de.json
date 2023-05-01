@@ -7,7 +7,7 @@
     "description": "With more than 7 years of experience in Web Technologies, I have a passion of creating state of the art and performant websites that work across platforms, devices & browsers. In my free time I love to travel around the globe and click pictures of nature.",
     "image": "profilepic.png",
     "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactMessage": "Have a Question? You can use the contact form below to contact me or use my email address directly.",
+    "contactMessage": "Haben Sie eine Frage? Sie können das unten stehende Kontaktformular verwenden oder direkt meine E-Mail-Adresse benutzen.",
     "email": "psujit14@gmail.com",
     "phone": "",
     "address": {
@@ -128,34 +128,28 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "canadian-wanderlust.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "title": "GoTo Connect (ehemals GoToMeeting)",
+        "category": "Collaboration Tool - Online Meetings",
+        "image": "GoToMeetingApp.png",
+        "url": "https://app.gotomeeting.com/index.html"
       },
       {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "fury-fighting-gear.jpg",
-        "url": "http://www.timbakerdev.com"
+        "title": "GoTo Connect (ehemals GoToMeeting Messenger)",
+        "category": "Collaboration Tool - Online Messenger",
+        "image": "GoToMeetingMessenger.png",
+        "url": "https://app.goto.com/messaging"
       },
       {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "original-thai-food.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "The Sushi Wedding",
+        "category": "Webseite, die ich als Hochzeitseinladung für unsere Hochzeit gebaut habe",
+        "image": "WeddingLogo.png",
+        "url": "https://the-sushi-wedding.netlify.app/"
       },
       {
         "title": "Resume Website",
-        "category": "A React based resume website template",
-        "image": "resume-website.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "smirkspace.jpg",
-        "url": "http://www.smirkspace.com"
+        "category": "Eine Typescript React basierte Lebenslauf-Website-Vorlage",
+        "image": "ResumeLogo.jpeg",
+        "url": "http://psujit.github.io"
       }
     ]
   },

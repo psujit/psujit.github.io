@@ -5,10 +5,9 @@ interface DataProps {
   data: PortfolioType
 }
 
-class Portfolio extends React.Component<DataProps> {
-  render() {
-    const projects = this.props.data.projects.map((projects) => {
-      const projectImage = 'images/portfolio/' + projects.image
+export const Portfolio: React.FunctionComponent<DataProps> = (props) => {
+    const projects = props.data.projects.map((projects) => {
+      const projectImage = 'images/' + projects.image
       return (
         <div key={projects.title} className="columns portfolio-item">
           <div className="item-wrap">
@@ -42,7 +41,4 @@ class Portfolio extends React.Component<DataProps> {
         </div>
       </section>
     )
-  }
 }
-
-export default Portfolio
