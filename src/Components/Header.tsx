@@ -1,13 +1,13 @@
 import * as React from 'react'
 import { Main } from '../types'
+import { LocaleFlag } from './LocaleFlag'
 
 interface DataProps {
   data: Main
 }
 
 export const Header: React.FunctionComponent<DataProps> = (props) => {
-  const { description, name, occupation } = props.data
-  const workCity = props.data.address.workCity
+  const { description, introductionText, name, occupation, occupationText } = props.data
   const networks = props.data.social.map((network) => (
     <li key={network.name}>
       <a href={network.url}>
@@ -49,14 +49,20 @@ export const Header: React.FunctionComponent<DataProps> = (props) => {
               Contact
             </a>
           </li>
+          <li>
+            <LocaleFlag country="united-kingdom" />
+          </li>
+          <li>
+            <LocaleFlag country="germany" />
+          </li>
         </ul>
       </nav>
 
       <div className="row banner">
         <div className="banner-text">
-          <h1 className="responsive-headline">I'm {name}.</h1>
+          <h1 className="responsive-headline">{introductionText} {name}.</h1>
           <h3>
-            I'm a {workCity} based <span>{occupation}</span>. {description}.
+            {occupationText} <span>{occupation}</span>. {description}.
           </h3>
           <hr />
           <ul className="social">{networks}</ul>

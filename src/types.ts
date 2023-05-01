@@ -2,7 +2,6 @@ export interface Address {
     city: string;
     state: string;
     street: string;
-    workCity: string;
     zip: string;
 }
 
@@ -20,8 +19,10 @@ export interface Main {
     description: string;
     email: string;
     image: string;
+    introductionText: string;
     name: string;
     occupation: string;
+    occupationText: string;
     phone: string;
     resumeDownload: string;
     social: Social[]

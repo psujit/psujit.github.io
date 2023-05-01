@@ -47,8 +47,8 @@
   /* About Section
    ------------------------------------------------------------------- */
   #about .profile-pic {
-    width: 114px;
-    height: 114px;
+    width: 180px;
+    height: 200px;
     margin-left: 12px;
   }
   #about .contact-details {
@@ -192,6 +192,14 @@
     border: none;
   }
 
+  ul#nav img {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-radius: 10%;
+    margin-top: 10px;
+  }
+
   /* Header Styles
    -------------------------------------------------------------------- */
   header .banner {
@@ -227,9 +235,6 @@
 
   /* About Section
    -------------------------------------------------------------------- */
-  #about .profile-pic {
-    display: none;
-  }
   #about .download .button {
     width: 100%;
     text-align: center;
@@ -237,6 +242,10 @@
   }
   #about .main-col {
     padding-right: 30px;
+    margin-left: 0;
+  }
+  #about .row {
+    display: block;
   }
 
   /* Resume Section
