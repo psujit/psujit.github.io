@@ -58,16 +58,16 @@
   "resume": {
     "education": [
       {
-        "school": "Universität Passau",
-        "degree": "Masters Informatik",
+        "school": "University of Passau",
+        "degree": "Masters Computer Science",
         "graduated": "December 2017",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description": "Major: IT-Security and Information and Communication Systems"
       },
       {
         "school": "Mumbai University",
         "degree": "Bachelor of Engineering - Computer Engineering",
         "graduated": "May 2012",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description": "Major: Computer Science and Logic"
       }
     ],
     "work": [
@@ -75,31 +75,31 @@
         "company": "GoTo Technologies Germany GmbH (previously LogMeIn GmbH)",
         "title": "Software Development Engineer ➡️ Senior Software Development Engineer",
         "years": "February 2018 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Integral part of teams developing GoToMeeting, GoToMeeting Messenger and GoToResolve. $ Used Clean Coding Principles and used measures for improving performance of React Applications. $ Contributed to external projects - Chakra UI. $ Working as Master Security Champion which includes being the flag bearer of security within the team. $ Mentored and lead team into unification of multiple collaboration tools. $ Worked as Acting Scrum Master to enable the team to perform with minimal obstacles and to ensure a smooth development workflow."
       },
       {
         "company": "Siemens AG",
         "title": "Master Thesis Praktikant",
         "years": "June 2017 - December 2017",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Developed an Open Source Tool which would generate the User Interface based on the Thing Description. $ Using the Thing Description of each Thing, the tool would generate the User Interface for the Thing in order to control the Thing."
       },
       {
         "company": "Siemens AG",
         "title": "Front end specialist(part-time)",
         "years": "August 2016 - May 2017",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Single-handedly developed a complete GUI for SysDL2.0. $ Demo of the GUI was shown and well accepted at E-World 2017 (E-World is Europe’s Biggest Energy Trade Fair)"
       },
       {
         "company": "Siemens AG",
         "title": "Research Intern",
         "years": "March 2016 - April 2016",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Front end specialist in Core Architecture Group for Web of Systems. $ Developed a custom graph plotting framework for Siemens WoS project"
       },
       {
         "company": "Infosys Ltd",
         "title": "Systems Engineer ➡️ Senior Systems Engineer",
         "years": "May 2013 - September 2015",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Developed a full stack Java application for a leading Automobile Company. $ Transitioned from Java Developer to Front End Specialist."
       }
     ],
     "skills": [
@@ -147,6 +147,12 @@
         "category": "Collaboration Tool - Online Messenger",
         "image": "GoToMeetingMessenger.png",
         "url": "https://app.goto.com/messaging"
+      },
+      {
+        "title": "GoTo Resolve",
+        "category": "Remote Support Tool",
+        "image": "GoToResolve.png",
+        "url": "https://console.gotoresolve.com"
       },
       {
         "title": "The Sushi Wedding",

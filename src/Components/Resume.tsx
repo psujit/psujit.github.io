@@ -19,6 +19,7 @@ export const Resume: React.FunctionComponent<DataProps> = (props) => {
     )
   })
   const work = props.data.work.map((work) => {
+    const descriptions = work.description.split('$')
     return (
       <div key={work.company}>
         <h3>{work.company}</h3>
@@ -26,7 +27,11 @@ export const Resume: React.FunctionComponent<DataProps> = (props) => {
           {work.title}
           <span>&bull;</span> <em className="date">{work.years}</em>
         </p>
-        <p>{work.description}</p>
+        <ul>
+          {descriptions.map((description) => (
+            <li>{description} </li>
+          ))}
+        </ul>
       </div>
     )
   })
