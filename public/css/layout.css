@@ -1019,6 +1019,10 @@ call-to-action .button {
   pointer-events: all;
   text-decoration: none;
 }
+#contact .submit {
+  width: 100%;
+  margin-left: 55px;
+}
 #message-warning,
 #message-success {
   display: none;

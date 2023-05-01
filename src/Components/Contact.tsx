@@ -1,3 +1,4 @@
+import emailJS from '@emailjs/browser';
 import * as React from 'react'
 import { Main } from '../types'
 
@@ -6,49 +7,22 @@ interface DataProps {
 }
 
 export const Contact: React.FunctionComponent<DataProps> = (props) => {
-  const [classForButton, setClassForButton] = React.useState('button isDisabled')
-  const [contactEmail, setContactEmail] = React.useState('')
-  const [contactMessage, setContactMessage] = React.useState('')
-  const [contactName, setContactName] = React.useState('')
-  const [contactSubject, setContactSubject] = React.useState('')
 
-  const handleChange = (event: React.FormEvent) => {
-    let target
-    switch (event.currentTarget.id) {
-      case 'contactName': {
-        target = event.target as HTMLInputElement
-        setContactName(target.value)
-        break
-      }
+  const form = React.useRef<HTMLFormElement>({} as HTMLFormElement);
 
-      case 'contactEmail': {
-        target = event.target as HTMLInputElement
-        setContactEmail(target.value)
-        break
-      }
+  const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
-      case 'contactSubject': {
-        target = event.target as HTMLInputElement
-        setContactSubject(target.value)
-        break
-      }
+    emailJS.sendForm('service_48y7tes', 'template_rodgse3', form.current, 'mo1EEVva1_Mz_12j0')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
 
-      case 'contactMessage': {
-        target = event.target as HTMLTextAreaElement
-        setContactMessage(target.value)
-        break
-      }
-
-      default:
-        break
-    }
-
-    if (contactName && contactEmail && contactMessage) {
-      setClassForButton('button isActive')
-    }
-  }
-  const { email, name, phone } = props.data
-  const { city, state, street, zip } = props.data.address
+  const { email, name } = props.data
+  const { city, state, zip } = props.data.address
   const message = props.data.contactMessage
 
   const size = 35
@@ -71,83 +45,52 @@ export const Contact: React.FunctionComponent<DataProps> = (props) => {
 
       <div className="row">
         <div className="eight columns">
-          <fieldset>
+          <form ref={form} onSubmit={sendEmail}>
             <div>
-              <label htmlFor="contactName">
+              <label htmlFor="from_name">
                 Name <span className="required">*</span>
               </label>
               <input
                 type="text"
                 defaultValue=""
                 size={size}
-                id="contactName"
-                name="contactName"
+                id="from_name"
+                name="from_name"
                 required={true}
-                onChange={handleChange}
               />
             </div>
 
             <div>
-              <label htmlFor="contactEmail">
+              <label htmlFor="from_email">
                 Email <span className="required">*</span>
               </label>
               <input
                 type="text"
                 defaultValue=""
                 size={size}
-                id="contactEmail"
-                name="contactEmail"
+                id="from_email"
+                name="from_email"
                 required={true}
-                onChange={handleChange}
               />
             </div>
 
             <div>
-              <label htmlFor="contactSubject">Subject</label>
-              <input
-                type="text"
-                defaultValue=""
-                size={size}
-                id="contactSubject"
-                name="contactSubject"
-                onChange={handleChange}
-              />
-            </div>
-
-            <div>
-              <label htmlFor="contactMessage">
+              <label htmlFor="message">
                 Message <span className="required">*</span>
               </label>
               <textarea
                 cols={cols}
                 rows={rows}
-                id="contactMessage"
+                id="message"
                 required={true}
-                name="contactMessage"
-                onChange={handleChange}
+                name="message"
               />
             </div>
 
-            <div>
-              <a
-                className={classForButton}
-                href={
-                  'mailto:' +
-                  email +
-                  '?subject=' +
-                  contactSubject +
-                  '&body=' +
-                  contactMessage +
-                  contactName
-                }
-              >
-                Submit
-              </a>
-              <span id="image-loader">
-                <img alt="" src="images/loader.gif" />
-              </span>
+            <div className="submit">
+              <input type="submit" value="Send" />
             </div>
-          </fieldset>
+          </form>
 
           <div id="message-warning"> Error boy</div>
           <div id="message-success">
@@ -162,10 +105,10 @@ export const Contact: React.FunctionComponent<DataProps> = (props) => {
             <h4>Address</h4>
             <p className="address">
               {name}
-              {street && <br /> && street}
               <br />
               {city}, {state} {zip}
-              {phone && <br /> && phone}
+              <br />
+              {email}
             </p>
           </div>
 
