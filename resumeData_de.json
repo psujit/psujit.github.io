@@ -4,11 +4,20 @@
     "introductionText": "Ich heiße",
     "occupation": "Senior Front End Software Engineer",
     "occupationText": "Ich bin ein in Frankfurt ansässiger",
-    "description": "With more than 7 years of experience in Web Technologies, I have a passion of creating state of the art and performant websites that work across platforms, devices & browsers. In my free time I love to travel around the globe and click pictures of nature.",
+    "description": "Mit mehr als 7 Jahren Erfahrung im Bereich der Webtechnologien habe ich eine Leidenschaft für die Erstellung von hochmodernen und leistungsstarken Websites, die plattform-, geräte- und browserübergreifend funktionieren. In meiner Freizeit liebe ich es, um die Welt zu reisen und Bilder von der Natur zu machen.",
     "image": "profilepic.png",
-    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactMessage": "Have a Question? You can use the contact form below to contact me or use my email address directly.",
+    "contactMessage": "Haben Sie eine Frage? Sie können das unten stehende Kontaktformular verwenden oder direkt meine E-Mail-Adresse benutzen.",
+    "contactNameField": "Name",
+    "contactEmailField": "Email",
+    "contactMessageField": "Nachricht",
+    "contactSubmitField": "Abschicken",
+    "downloadResume": "Lebenslauf herunterlanden",
     "email": "psujit14@gmail.com",
+    "headerHome": "Home",
+    "headerAbout": "Über mich",
+    "headerResume": "Lebenslauf",
+    "headerWorks": "Portfolio",
+    "headerContact": "Kontakt",
     "phone": "",
     "address": {
       "street": "",
@@ -47,51 +56,50 @@
     ]
   },
   "resume": {
-    "skillMessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
         "school": "Universität Passau",
         "degree": "Masters Informatik",
         "graduated": "December 2017",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description": "Hauptfach: IT-Sicherheit und Informations- und Kommunikationssysteme"
       },
       {
-        "school": "Mumbai University",
+        "school": "Mumbai Universität",
         "degree": "Bachelor of Engineering - Computer Engineering",
         "graduated": "May 2012",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description": "Hauptfach: Informatik und Logik"
       }
     ],
     "work": [
       {
-        "company": "GoTo Technologies Germany GmbH (previously LogMeIn GmbH)",
-        "title": "Software Development Engineer --> Senior Software Development Engineer",
+        "company": "GoTo Technologies Germany GmbH (ehemals LogMeIn GmbH)",
+        "title": "Software Development Engineer ➡️ Senior Software Development Engineer",
         "years": "February 2018 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Integraler Bestandteil der Teams, die GoToMeeting, GoToMeeting Messenger und GoToResolve entwickeln. $ Anwendung von Clean Coding-Prinzipien und Maßnahmen zur Verbesserung der Leistung von React-Anwendungen. $ Beitrag zu externen Projekten - Chakra UI. $ Arbeit als Master Security Champion, was bedeutet, dass ich der Fahnenträger für Sicherheit innerhalb des Teams bin. $ Mentor und Leiter des Teams bei der Vereinheitlichung mehrerer Kollaborationstools. $ Arbeitete als Acting Scrum Master, um das Team in die Lage zu versetzen, mit minimalen Hindernissen zu arbeiten und einen reibungslosen Entwicklungsablauf zu gewährleisten."
       },
       {
         "company": "Siemens AG",
         "title": "Master Thesis Praktikant",
         "years": "June 2017 - December 2017",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Entwicklung eines Open-Source-Tools, das die Benutzeroberfläche auf der Grundlage der Thing-Beschreibung generiert. $ Anhand der Thing-Beschreibung eines jeden Thing würde das Tool die Benutzeroberfläche für das Thing generieren, um das Thing zu steuern."
       },
       {
         "company": "Siemens AG",
         "title": "Front end specialist(part-time)",
         "years": "August 2016 - May 2017",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Ich habe im Alleingang eine vollständige grafische Benutzeroberfläche für SysDL2.0 entwickelt. $ Demo der GUI wurde auf der E-World 2017 gezeigt und gut angenommen (E-World ist Europas größte Energie-Messe)"
       },
       {
         "company": "Siemens AG",
         "title": "Research Intern",
         "years": "March 2016 - April 2016",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Front-End-Spezialist in der Core Architecture Group für Web of Systems. $ Entwicklung eines benutzerdefinierten Rahmens für die Erstellung von Diagrammen für das WoS-Projekt von Siemens"
       },
       {
         "company": "Infosys Ltd",
-        "title": "Systems Engineer --> Senior Systems Engineer",
+        "title": "Systems Engineer ➡️ Senior Systems Engineer",
         "years": "May 2013 - September 2015",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Entwicklung einer vollständigen Java-Anwendung für ein führendes Unternehmen der Automobilbranche. $ Übergang vom Java-Entwickler zum Front-End-Spezialisten."
       }
     ],
     "skills": [
@@ -126,36 +134,37 @@
     ]
   },
   "portfolio": {
+    "header": "Sehen Sie sich an, was ich entwickelt habe",
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "canadian-wanderlust.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "title": "GoTo Connect (ehemals GoToMeeting)",
+        "category": "Collaboration Tool - Online Meetings",
+        "image": "GoToMeetingApp.png",
+        "url": "https://app.gotomeeting.com/index.html"
       },
       {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "fury-fighting-gear.jpg",
-        "url": "http://www.timbakerdev.com"
+        "title": "GoTo Connect (ehemals GoToMeeting Messenger)",
+        "category": "Collaboration Tool - Online Messenger",
+        "image": "GoToMeetingMessenger.png",
+        "url": "https://app.goto.com/messaging"
       },
       {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "original-thai-food.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "GoTo Resolve",
+        "category": "Tool für Fernunterstützung",
+        "image": "GoToResolve.png",
+        "url": "https://console.gotoresolve.com"
+      },
+      {
+        "title": "The Sushi Wedding",
+        "category": "Webseite, die ich als Hochzeitseinladung für unsere Hochzeit gebaut habe",
+        "image": "WeddingLogo.png",
+        "url": "https://the-sushi-wedding.netlify.app/"
       },
       {
         "title": "Resume Website",
-        "category": "A React based resume website template",
-        "image": "resume-website.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "smirkspace.jpg",
-        "url": "http://www.smirkspace.com"
+        "category": "Eine Typescript React basierte Lebenslauf-Website-Vorlage",
+        "image": "ResumeLogo.jpeg",
+        "url": "http://psujit.github.io"
       }
     ]
   },

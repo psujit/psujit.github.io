@@ -6,9 +6,18 @@
     "occupationText": "I'm a Frankfurt based",
     "description": "With more than 7 years of experience in Web Technologies, I have a passion of creating state of the art and performant websites that work across platforms, devices & browsers. In my free time I love to travel around the globe and click pictures of nature.",
     "image": "profilepic.png",
-    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
     "contactMessage": "Have a Question? You can use the contact form below to contact me or use my email address directly.",
+    "contactNameField": "Name",
+    "contactEmailField": "Email",
+    "contactMessageField": "Message",
+    "contactSubmitField": "Send",
+    "downloadResume": "Download Resume",
     "email": "psujit14@gmail.com",
+    "headerHome": "Home",
+    "headerAbout": "About",
+    "headerResume": "Resume",
+    "headerWorks": "Works",
+    "headerContact": "Contact",
     "phone": "",
     "address": {
       "street": "",
@@ -47,51 +56,50 @@
     ]
   },
   "resume": {
-    "skillMessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
-        "school": "Universität Passau",
-        "degree": "Masters Informatik",
+        "school": "University of Passau",
+        "degree": "Masters Computer Science",
         "graduated": "December 2017",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description": "Major: IT-Security and Information and Communication Systems"
       },
       {
         "school": "Mumbai University",
         "degree": "Bachelor of Engineering - Computer Engineering",
         "graduated": "May 2012",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description": "Major: Computer Science and Logic"
       }
     ],
     "work": [
       {
         "company": "GoTo Technologies Germany GmbH (previously LogMeIn GmbH)",
-        "title": "Software Development Engineer --> Senior Software Development Engineer",
+        "title": "Software Development Engineer ➡️ Senior Software Development Engineer",
         "years": "February 2018 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Integral part of teams developing GoToMeeting, GoToMeeting Messenger and GoToResolve. $ Used Clean Coding Principles and used measures for improving performance of React Applications. $ Contributed to external projects - Chakra UI. $ Working as Master Security Champion which includes being the flag bearer of security within the team. $ Mentored and lead team into unification of multiple collaboration tools. $ Worked as Acting Scrum Master to enable the team to perform with minimal obstacles and to ensure a smooth development workflow."
       },
       {
         "company": "Siemens AG",
         "title": "Master Thesis Praktikant",
         "years": "June 2017 - December 2017",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Developed an Open Source Tool which would generate the User Interface based on the Thing Description. $ Using the Thing Description of each Thing, the tool would generate the User Interface for the Thing in order to control the Thing."
       },
       {
         "company": "Siemens AG",
         "title": "Front end specialist(part-time)",
         "years": "August 2016 - May 2017",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Single-handedly developed a complete GUI for SysDL2.0. $ Demo of the GUI was shown and well accepted at E-World 2017 (E-World is Europe’s Biggest Energy Trade Fair)"
       },
       {
         "company": "Siemens AG",
         "title": "Research Intern",
         "years": "March 2016 - April 2016",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Front end specialist in Core Architecture Group for Web of Systems. $ Developed a custom graph plotting framework for Siemens WoS project"
       },
       {
         "company": "Infosys Ltd",
-        "title": "Systems Engineer --> Senior Systems Engineer",
+        "title": "Systems Engineer ➡️ Senior Systems Engineer",
         "years": "May 2013 - September 2015",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Developed a full stack Java application for a leading Automobile Company. $ Transitioned from Java Developer to Front End Specialist."
       }
     ],
     "skills": [
@@ -126,36 +134,37 @@
     ]
   },
   "portfolio": {
+    "header": "Check out some of my works",
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "canadian-wanderlust.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "title": "GoTo Connect (previously GoToMeeting)",
+        "category": "Collaboration Tool - Online Meetings",
+        "image": "GoToMeetingApp.png",
+        "url": "https://app.gotomeeting.com/index.html"
       },
       {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "fury-fighting-gear.jpg",
-        "url": "http://www.timbakerdev.com"
+        "title": "GoTo Connect (previously GoToMeeting Messenger)",
+        "category": "Collaboration Tool - Online Messenger",
+        "image": "GoToMeetingMessenger.png",
+        "url": "https://app.goto.com/messaging"
       },
       {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "original-thai-food.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "GoTo Resolve",
+        "category": "Remote Support Tool",
+        "image": "GoToResolve.png",
+        "url": "https://console.gotoresolve.com"
+      },
+      {
+        "title": "The Sushi Wedding",
+        "category": "Website I built as a wedding invite for our wedding",
+        "image": "WeddingLogo.png",
+        "url": "https://the-sushi-wedding.netlify.app/"
       },
       {
         "title": "Resume Website",
-        "category": "A React based resume website template",
-        "image": "resume-website.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "smirkspace.jpg",
-        "url": "http://www.smirkspace.com"
+        "category": "A Typescript React based resume website template",
+        "image": "ResumeLogo.jpeg",
+        "url": "http://psujit.github.io"
       }
     ]
   },

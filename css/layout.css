@@ -125,7 +125,7 @@ header .scrolldown a {
   transition: all 0.3s ease-in-out;
 }
 header .scrolldown a:hover {
-  color: #11abb0;
+  color: #2b2b2b;
 }
 
 /* primary navigation
@@ -330,6 +330,11 @@ ul#nav img {
 #resume .date {
   font: 15px/24px 'opensans-regular', sans-serif;
   margin-top: 6px;
+}
+
+#resume .work ul {
+  list-style-type: disc;
+  text-align: justify;
 }
 
 /*----------------------------------------------*/
