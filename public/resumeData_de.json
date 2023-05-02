@@ -26,7 +26,7 @@
       "zip": "60528"
     },
     "website": "http://psujit.github.io",
-    "resumeDownload": "docs/resume_Sujit_Pradhan.pdf",
+    "resumeDownload": "docs/Resume_Sujit_Pradhan_DE.pdf",
     "social": [
       {
         "name": "linkedin",
@@ -73,7 +73,7 @@
     "work": [
       {
         "company": "GoTo Technologies Germany GmbH (ehemals LogMeIn GmbH)",
-        "title": "Software Development Engineer ➡️ Senior Software Development Engineer",
+        "title": "Software Entwickler ➡️ Senior Software Entwickler",
         "years": "February 2018 - Present",
         "description": "Integraler Bestandteil der Teams, die GoToMeeting, GoToMeeting Messenger und GoToResolve entwickeln. $ Anwendung von Clean Coding-Prinzipien und Maßnahmen zur Verbesserung der Leistung von React-Anwendungen. $ Beitrag zu externen Projekten - Chakra UI. $ Arbeit als Master Security Champion, was bedeutet, dass ich der Fahnenträger für Sicherheit innerhalb des Teams bin. $ Mentor und Leiter des Teams bei der Vereinheitlichung mehrerer Kollaborationstools. $ Arbeitete als Acting Scrum Master, um das Team in die Lage zu versetzen, mit minimalen Hindernissen zu arbeiten und einen reibungslosen Entwicklungsablauf zu gewährleisten."
       },
@@ -85,13 +85,13 @@
       },
       {
         "company": "Siemens AG",
-        "title": "Front end specialist(part-time)",
+        "title": "Front end specialist Werkstudent",
         "years": "August 2016 - May 2017",
         "description": "Ich habe im Alleingang eine vollständige grafische Benutzeroberfläche für SysDL2.0 entwickelt. $ Demo der GUI wurde auf der E-World 2017 gezeigt und gut angenommen (E-World ist Europas größte Energie-Messe)"
       },
       {
         "company": "Siemens AG",
-        "title": "Research Intern",
+        "title": "Praktikant",
         "years": "March 2016 - April 2016",
         "description": "Front-End-Spezialist in der Core Architecture Group für Web of Systems. $ Entwicklung eines benutzerdefinierten Rahmens für die Erstellung von Diagrammen für das WoS-Projekt von Siemens"
       },
