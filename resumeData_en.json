@@ -26,7 +26,7 @@
       "zip": "60528"
     },
     "website": "http://psujit.github.io",
-    "resumeDownload": "docs/resume_Sujit_Pradhan.pdf",
+    "resumeDownload": "docs/Resume_Sujit_Pradhan_EN.pdf",
     "social": [
       {
         "name": "linkedin",
@@ -73,7 +73,7 @@
     "work": [
       {
         "company": "GoTo Technologies Germany GmbH (previously LogMeIn GmbH)",
-        "title": "Software Development Engineer ➡️ Senior Software Development Engineer",
+        "title": "Software Engineer ➡️ Senior Software Engineer",
         "years": "February 2018 - Present",
         "description": "Integral part of teams developing GoToMeeting, GoToMeeting Messenger and GoToResolve. $ Used Clean Coding Principles and used measures for improving performance of React Applications. $ Contributed to external projects - Chakra UI. $ Working as Master Security Champion which includes being the flag bearer of security within the team. $ Mentored and lead team into unification of multiple collaboration tools. $ Worked as Acting Scrum Master to enable the team to perform with minimal obstacles and to ensure a smooth development workflow."
       },
