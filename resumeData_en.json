@@ -13,11 +13,13 @@
     "contactSubmitField": "Send",
     "downloadResume": "Download Resume",
     "email": "psujit14@gmail.com",
-    "headerHome": "Home",
-    "headerAbout": "About",
-    "headerResume": "Resume",
-    "headerWorks": "Works",
-    "headerContact": "Contact",
+    "headerSection": {
+      "headerHome": "Home",
+      "headerAbout": "About",
+      "headerResume": "Resume",
+      "headerPortfolio": "Portfolio",
+      "headerContact": "Contact"
+    },
     "phone": "",
     "address": {
       "street": "",
