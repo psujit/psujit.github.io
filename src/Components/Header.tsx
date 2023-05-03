@@ -1,24 +1,25 @@
 import * as React from 'react'
 import { Main } from '../types'
+import { useNavObserver } from '../useNavObserver'
 import { LocaleFlag } from './LocaleFlag'
 
 interface DataProps {
   data: Main
 }
 
+export const SectionId = {
+  About: 'about',
+  Contact: 'contact',
+  Home: 'home',
+  Portfolio: 'portfolio',
+  Resume: 'resume',
+  // Testimonials: 'testimonials',
+}
+
 export const Header: React.FunctionComponent<DataProps> = (props) => {
-  const {
-    description,
-    headerAbout,
-    headerContact,
-    headerHome,
-    headerResume,
-    headerWorks,
-    introductionText,
-    name,
-    occupation,
-    occupationText,
-  } = props.data
+  const { description, introductionText, name, occupation, occupationText } = props.data
+  const { headerAbout, headerContact, headerHome, headerPortfolio, headerResume } =
+    props.data.headerSection
   const networks = props.data.social.map((network) => (
     <li key={network.name}>
       <a href={network.url}>
@@ -26,6 +27,35 @@ export const Header: React.FunctionComponent<DataProps> = (props) => {
       </a>
     </li>
   ))
+
+  const [currentSection, setCurrentSection] = React.useState<typeof SectionId | null>(null)
+  const navSections = React.useMemo(
+    () => [
+      SectionId.About,
+      SectionId.Contact,
+      SectionId.Home,
+      SectionId.Portfolio,
+      SectionId.Resume,
+      // SectionId.Testimonials,
+    ],
+    [],
+  )
+
+  const intersectionHandler = React.useCallback((section: typeof SectionId | null) => {
+    if (section) {
+      setCurrentSection(section)
+    }
+  }, [])
+
+  useNavObserver(navSections.map((section) => `#${section}`).join(','), intersectionHandler)
+
+  const getClassName = (section: typeof SectionId): string => {
+    if (section === currentSection) {
+      return 'current'
+    } else {
+      return ''
+    }
+  }
 
   return (
     <header id="home" style={{ backgroundImage: 'url(images/header-background.jpg)' }}>
@@ -38,28 +68,28 @@ export const Header: React.FunctionComponent<DataProps> = (props) => {
         </a>
 
         <ul id="nav" className="nav">
-          <li className="current">
+          <li className={getClassName('home' as unknown as typeof SectionId)}>
             <a className="smoothscroll" href="#home">
               {headerHome}
             </a>
           </li>
-          <li>
+          <li className={getClassName('about' as unknown as typeof SectionId)}>
             <a className="smoothscroll" href="#about">
               {headerAbout}
             </a>
           </li>
-          <li>
+          <li className={getClassName('resume' as unknown as typeof SectionId)}>
             <a className="smoothscroll" href="#resume">
               {headerResume}
             </a>
           </li>
-          <li>
+          <li className={getClassName('portfolio' as unknown as typeof SectionId)}>
             <a className="smoothscroll" href="#portfolio">
-              {headerWorks}
+              {headerPortfolio}
             </a>
           </li>
-          {/*<li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>*/}
-          <li>
+          {/*<li className={getClassName('testimonials' as unknown as typeof SectionId)}><a className="smoothscroll" href="#testimonials">Testimonials</a></li>*/}
+          <li className={getClassName('contact' as unknown as typeof SectionId)}>
             <a className="smoothscroll" href="#contact">
               {headerContact}
             </a>

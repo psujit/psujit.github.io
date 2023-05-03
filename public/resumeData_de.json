@@ -13,11 +13,13 @@
     "contactSubmitField": "Abschicken",
     "downloadResume": "Lebenslauf herunterlanden",
     "email": "psujit14@gmail.com",
-    "headerHome": "Home",
-    "headerAbout": "Über mich",
-    "headerResume": "Lebenslauf",
-    "headerWorks": "Portfolio",
-    "headerContact": "Kontakt",
+    "headerSection": {
+      "headerHome": "Home",
+      "headerAbout": "Über mich",
+      "headerResume": "Lebenslauf",
+      "headerPortfolio": "Portfolio",
+      "headerContact": "Kontakt"
+    },
     "phone": "",
     "address": {
       "street": "",

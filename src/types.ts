@@ -12,6 +12,14 @@ export interface Education {
     school: string;
 }
 
+export interface HeaderSection {
+    headerHome: string;
+    headerAbout: string;
+    headerResume: string;
+    headerPortfolio: string;
+    headerContact: string;
+}
+
 export interface Main {
     address: Address;
     bio: string;
@@ -23,11 +31,7 @@ export interface Main {
     downloadResume:  string;
     description: string;
     email: string;
-    headerHome: string;
-    headerAbout: string;
-    headerResume: string;
-    headerWorks: string;
-    headerContact: string;
+    headerSection: HeaderSection;
     image: string;
     introductionText: string;
     name: string;
