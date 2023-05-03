@@ -75,19 +75,19 @@
         "company": "GoTo Technologies Germany GmbH (ehemals LogMeIn GmbH)",
         "title": "Software Entwickler ➡️ Senior Software Entwickler",
         "years": "February 2018 - Present",
-        "description": "Integraler Bestandteil der Teams, die GoToMeeting, GoToMeeting Messenger und GoToResolve entwickeln. $ Anwendung von Clean Coding-Prinzipien und Maßnahmen zur Verbesserung der Leistung von React-Anwendungen. $ Beitrag zu externen Projekten - Chakra UI. $ Arbeit als Master Security Champion, was bedeutet, dass ich der Fahnenträger für Sicherheit innerhalb des Teams bin. $ Mentor und Leiter des Teams bei der Vereinheitlichung mehrerer Kollaborationstools. $ Arbeitete als Acting Scrum Master, um das Team in die Lage zu versetzen, mit minimalen Hindernissen zu arbeiten und einen reibungslosen Entwicklungsablauf zu gewährleisten."
+        "description": "Integraler Bestandteil der Teams, die GoToMeeting, GoToMeeting Messenger und GoToResolve entwickeln. $ Anwendung von Clean Coding-Prinzipien und Maßnahmen zur Verbesserung der Leistung von React-Anwendungen. $ Beitrag zu Open Source Projekten - Chakra UI. $ Arbeit als Master Security Champion, was bedeutet, dass ich der Flaggenträger für Sicherheit innerhalb des Teams bin. $ Mentor und Leiter des Teams bei der Harmonisierung mehrerer Kollaborationstools. $ Arbeit als Acting Scrum Master, um die Anliegen des Teams zu identifizieren und zu eskalieren und einen flüssigen Entwicklungsprozess zu sichern."
       },
       {
         "company": "Siemens AG",
         "title": "Master Thesis Praktikant",
         "years": "June 2017 - December 2017",
-        "description": "Entwicklung eines Open-Source-Tools, das die Benutzeroberfläche auf der Grundlage der Thing-Beschreibung generiert. $ Anhand der Thing-Beschreibung eines jeden Thing würde das Tool die Benutzeroberfläche für das Thing generieren, um das Thing zu steuern."
+        "description": "Entwicklung eines Open-Source-Tools, das die Benutzeroberfläche auf der Grundlage der Thing-Description generiert. $ Anhand der Thing-Description eines jeden Thing würde das Tool die User Interface für das Thing generieren, um das Thing zu steuern."
       },
       {
         "company": "Siemens AG",
         "title": "Front end specialist Werkstudent",
         "years": "August 2016 - May 2017",
-        "description": "Ich habe im Alleingang eine vollständige grafische Benutzeroberfläche für SysDL2.0 entwickelt. $ Demo der GUI wurde auf der E-World 2017 gezeigt und gut angenommen (E-World ist Europas größte Energie-Messe)"
+        "description": "Ich habe im Alleingang eine vollständige grafische User Interface für SysDL2.0 entwickelt. $ Demo der GUI wurde auf der E-World 2017 gezeigt und gut angenommen (E-World ist Europas größte Energie-Messe)"
       },
       {
         "company": "Siemens AG",
@@ -99,7 +99,7 @@
         "company": "Infosys Ltd",
         "title": "Systems Engineer ➡️ Senior Systems Engineer",
         "years": "May 2013 - September 2015",
-        "description": "Entwicklung einer vollständigen Java-Anwendung für ein führendes Unternehmen der Automobilbranche. $ Übergang vom Java-Entwickler zum Front-End-Spezialisten."
+        "description": "Entwicklung einer Full Stack Java-Anwendung für ein führendes Unternehmen der Automobilbranche. $ Übergang vom Java-Entwickler zum Front-End-Spezialisten."
       }
     ],
     "skills": [
